@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Lato;
+    src: url(assets/fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+
+body,html, body * {
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    display: grid;
+    grid-template-columns: auto min(1440px, 100%) auto;
+}
+body * {
+    grid-column: 2/3;
+} */
+ * {
+    box-sizing: border-box;
+ }
+
+
+
+:root {
+    --primary-normal: #1B3B4B;
+    --primary-light: #B4D3E4;
+    --primary-dark: #0E1D25;
+
+    --system-success: #8ED24B;
+    --system-info: #5B7BED;
+    --system-warning: #FFBA35;
+    --system-danger: #FF3E3E;
+    --system-inactive: #F3F1F1;
+
+    --secondary-normal: #FF8328;
+    --secondary-light: #FF951A;
+    --secondary-dark: #DF5D00;
+
+    --text-100: #2A153B;
+    --text-80: #564463;
+    --text-60: #80728A;
+    --text-40: #AAA1B1;
+    --text-20: #D5D0D8;
+    --text-0: #FFFFFF;
+}
+
+h1 {
+    color: var(--text-100);
+    text-align: center;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%; /* 48px */
+}
+h2 {
+    color: var(--text-100);
+    text-align: center;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%; /* 40px */
+}
+h3 {
+    color: var(--text-100);
+    text-align: center;
+    font-family: Lato;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%; /* 36px */
+}
+h4, label {
+    color: var(--text-100);
+    text-align: center;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%; /* 24px */
+}
+p, .text {
+    color: var(--text-100);
+    text-align: center;
+
+    /* Text */
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.small-text {
+    color: var(--text-100);
+    text-align: center;
+
+    /* Small */
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 12px */
+}
+
+
+
+h1.strong, h2.strong, h3.strong, h4.strong {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+}
+
