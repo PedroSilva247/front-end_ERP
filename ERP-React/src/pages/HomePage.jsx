@@ -1,9 +1,9 @@
 function HomePage() {
     return (
         <>
-            <h1 className="">Typography</h1>
+            <h1 className=""></h1>
         </>
     )
 }
 
-export default HomePage
+export default HomePage 

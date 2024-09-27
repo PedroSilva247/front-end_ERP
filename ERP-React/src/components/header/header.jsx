@@ -1,19 +1,16 @@
 import AccountContainer from "../accountContainer/AccountContainer"
-import './navigation.css'
+import './header.css'
 
-function Navigation({isLoggedIn}) {
+function Header({isLoggedIn}) {
     return (
         <>
-            <nav className="navigation">
+            <header className="header">
                 <h1 className="logo">Brand Logo</h1>
-                
                 <AccountContainer isLoggedIn={isLoggedIn}/>
-                    
-                
-            </nav>
+            </header>
             
         </>
     )
 }
 
-export default Navigation
+export default Header

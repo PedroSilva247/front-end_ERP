@@ -1,9 +1,12 @@
 import './App.css'
+import './assets/css/texts.css'
+import './assets/css/buttons.css'
 
 import { useState } from 'react'
 import HomePage from './pages/HomePage'
-import Navigation from './components/navigation/Navigation'
+import Header from './components/header/header'
 import ProtectedRoute from './components/ProtectedRoute'
+import NavigationMenu from './components/navigationMenu/NavigationMenu'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
@@ -13,11 +16,11 @@ function App() {
   return (
     <>
       <Router>
-        <Navigation isLoggedIn={isLogged}/>
+        <Header isLoggedIn={isLogged}/>
         <Routes>
           <Route path='/' element={
             <ProtectedRoute isLoggedIn={isLogged}>
-              <HomePage/>
+              <NavigationMenu/>
             </ProtectedRoute>
           }/>
         </Routes>
